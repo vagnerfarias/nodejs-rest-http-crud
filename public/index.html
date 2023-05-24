@@ -36,6 +36,14 @@
       
       <h3>Hostname: xxx  xxx</h3>
       
+      <p id="demo"></p>
+
+      <script>
+      let hostname = location.hostname;
+      document.getElementById("demo").innerHTML = hostname;
+      </script>
+
+      
       <h3>Add/Edit a fruit</h3>
 
       <form @submit.prevent="update">
